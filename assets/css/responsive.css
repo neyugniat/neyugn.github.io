@@ -2,9 +2,9 @@
 
 @media (min-width: 740px) and (max-width: 1023px)  {
     .sub-modal1 .modal-clip {
-        max-width: 500px;
+        max-width: 700px;
         margin-top: 400px;
-        margin-left: 170px;
+        margin-left: 12%;
       }
 }
 
@@ -15,5 +15,55 @@
 
     #header .search-btn {
         display: none;
+    }
+
+    #content .member-item {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+    .what-item  {
+        float: left;
+        width: 50%;
+        padding: 0 8px;
+        margin: 8px 0px;
+    }
+
+    .modal-img  {
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-style: solid;
+        border-color: #000;
+        border-width: 2px;
+        display: flex;
+    }
+
+    .modal-container  {
+        border-radius: 20px;
+        width: 300px;
+        min-height: 360px;
+        background-color: #009688;
+        position: relative;
+        animation: modalFadeIn ease 0.3s;
+        border-color: #000;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    .modal-container .modal-content {
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 9px;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+
+    .sub-modal1 .modal-clip {
+        max-width: 350px;
+        margin-top: 250px;
+        margin-left: 10%;
     }
 }

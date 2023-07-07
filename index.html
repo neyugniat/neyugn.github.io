@@ -26,10 +26,9 @@
         <div class="search-btn">
           <i class="search-icon fa-solid fa-magnifying-glass"></i>
         </div>
-        <!-- <div id="mobile-menu" class="mobile-menu-btn">
+        <div id="mobile-menu" class="mobile-menu-btn">
           <i class="fa-solid fa-bars"></i>
-        </div> -->
-
+        </div>
       </div>
       <!-- SLIDER SECTION -->
       <div id="slider">
@@ -50,16 +49,17 @@
             "I feel a thousand capacities spring up in me. I am arch, gay,
             languid, melancholy by turns. I am rooted, but I flow. All gold,
             flowing." <br />
-            "This is the most exciting moment I have ever known.
-            I flutter. I ripple. I stream like a plant in the river, flowing
-            this way, flowing that way, but rooted, so that he may come to me.
-            ‘Come,’ I say, ‘come.’"<br />
-            “It's my experience that people are a
-            lot more sympathetic if they can see you hurting, and for the
-            millionth time in my life I wish for measles or smallpox or some
-            other easily understood disease just to make it easier on me and
-            also on them.”<br>
-            <strong style="float: right;">-   Jennifer Niven, All the Bright Places   -</strong>
+            "This is the most exciting moment I have ever known. I flutter. I
+            ripple. I stream like a plant in the river, flowing this way,
+            flowing that way, but rooted, so that he may come to me. ‘Come,’ I
+            say, ‘come.’"<br />
+            “It's my experience that people are a lot more sympathetic if they
+            can see you hurting, and for the millionth time in my life I wish
+            for measles or smallpox or some other easily understood disease just
+            to make it easier on me and also on them.”<br />
+            <strong style="float: right"
+              >- Jennifer Niven, All the Bright Places -</strong
+            >
           </p>
           <div class="members-list">
             <div class="member-item">
@@ -120,10 +120,10 @@
               <div class="what-item">
                 <img src="./assets/img/6.png" alt="6" class="what-img" />
                 <div class="what-body">
-                  <h3 class="what-heading">Suuuukuuuunaaaaaaaa</h3>
+                  <h3 class="what-heading">Suukunaaaaa</h3>
                   <p class="what-time">Sun 2 July 2023</p>
-                  <p class="what-desc">Suuuukuuuunaaaaaaaa</p>
-                  <button class="what-btn js-btn">Suuuukuuuunaaaaaaaa</button>
+                  <p class="what-desc">Suukunaaaaa</p>
+                  <button class="what-btn js-btn">Suukunaaaaa</button>
                 </div>
               </div>
 
@@ -140,10 +140,10 @@
               <div class="what-item">
                 <img src="./assets/img/8.png" alt="8" class="what-img" />
                 <div class="what-body">
-                  <h3 class="what-heading">Saaaaaassuuuukeee</h3>
+                  <h3 class="what-heading">Saaassuukee</h3>
                   <p class="what-time">Wed 18 Jan 2023</p>
-                  <p class="what-desc">Saaaaaassuuuukeee</p>
-                  <button class="what-btn js-btn">Saaaaaassuuuukeee</button>
+                  <p class="what-desc">Saaassuukee</p>
+                  <button class="what-btn js-btn">Saaassuukee</button>
                 </div>
               </div>
 
@@ -219,13 +219,17 @@
 
       <div class="sub-modal js-sub-modal">
         <div class="sub-modal-container js-sub-modal-container">
-          <img src="./assets/img/tanghoa.png" alt="meo" class="modal-img">
+          <img src="./assets/img/tanghoa.png" alt="meo" class="modal-img" />
         </div>
       </div>
 
       <div class="sub-modal1 js-sub-modal1">
         <div class="sub-modal-container1 js-sub-modal-container1">
-          <video src="assets/img/Cat surprised by a kiss_1.mp4" class="modal-clip" id="video"></video>
+          <video
+            src="assets/img/Cat surprised by a kiss_1.mp4"
+            class="modal-clip"
+            id="video"
+          ></video>
         </div>
       </div>
     </div>
@@ -236,9 +240,13 @@
       const modalClose = document.querySelector(".js-modal-close");
       const modalContainer = document.querySelector(".js-modal-container");
       const subModal = document.querySelector(".js-sub-modal");
-      const subModalContainer = document.querySelector(".js-sub-modal-container");
+      const subModalContainer = document.querySelector(
+        ".js-sub-modal-container"
+      );
       const subModal1 = document.querySelector(".js-sub-modal1");
-      const subModalContainer1 = document.querySelector(".js-sub-modal-container1");
+      const subModalContainer1 = document.querySelector(
+        ".js-sub-modal-container1"
+      );
 
       function showModal() {
         modal.classList.add("open");
@@ -274,38 +282,44 @@
         subModal1.classList.remove("open");
         myVideo.pause();
       }
-      
+
       const myVideo = document.getElementById("video");
       const likeBtn = document.querySelector(".js-like-btn");
       const checkBtn = document.querySelector(".js-check-btn");
 
-      checkBtn.addEventListener("click", function(event)  {
-        showSubModal1()
+      checkBtn.addEventListener("click", function (event) {
+        showSubModal1();
         if (myVideo.paused) {
           myVideo.play();
-        }
-        else  {
+        } else {
           myVideo.pause();
         }
       });
       likeBtn.addEventListener("click", showSubModal);
       subModal.addEventListener("click", hideSubModal);
       subModal1.addEventListener("click", hideSubModal1);
-
     </script>
 
     <script>
-      var header = document.getElementById('header');
-      var mobileMenu = document.getElementById('mobile-menu');
+      var header = document.getElementById("header");
+      var mobileMenu = document.getElementById("mobile-menu");
 
-      mobileMenu.onclick = function() {
+      mobileMenu.onclick = function () {
         var isClose = header.clientHeight === 46;
-        if (isClose)  {
-          header.style.height = 'auto';
+        if (isClose) {
+          header.style.height = "auto";
+        } else {
+          header.style.height = "46px";
         }
-        else  {
-          header.style.height = '46px';
-        }
+      };
+
+      var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+
+        menuItem.onclick = function () {
+          header.style.height = "46px";
+        };
       }
     </script>
   </body>

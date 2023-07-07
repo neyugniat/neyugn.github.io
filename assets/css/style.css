@@ -293,6 +293,9 @@ html {
   background-color: #009688;
   position: relative;
   animation: modalFadeIn ease 0.3s;
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .modal-img  {
@@ -312,7 +315,6 @@ html {
   margin-top: 5px;
   transform: translateX(-50%);
   font-size: 20px;
-  
 }
 
 .modal-container #like-btn {
