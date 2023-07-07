@@ -1,0 +1,433 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-white {
+  color: #fff;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 46px;
+  background-color: #292929;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0px 24px;
+  display: block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a {
+  color: rgb(0, 0, 0);
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+#nav .nav-arrow-down {
+  font-size: 14px;
+  margin-left: 5px;
+}
+#header .mobile-menu-btn,
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+  cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover  {
+  background-color: #ccc;
+}
+
+#header .fa-bars:hover  {
+  color: #000;
+}
+
+
+#header .search-btn:hover {
+  background-color: #f44336;
+  transition: 0.4s;
+}
+
+#header .fa-bars  ,
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+}
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("./img-la") top center /
+    cover no-repeat;
+
+  background-image: url(./img_la.jpg);
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+#slider .text-heading {
+  font-size: 24px;
+}
+
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+#slider .text-content {
+  position: absolute;
+}
+
+#content .content-section {
+  width: 800px;
+  max-width: 100%;
+  padding: 64px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#content .section-heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  color: #797979;
+  margin-top: 25px;
+}
+
+#content .about-text {
+  font-size: 15px;
+  margin-top: 25px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#content .members-list {
+  margin-top: 48px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+#content .member-item {
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+
+#content .member-name  {
+  font-size: 15px;
+}
+
+#content .member-img  {
+  width: 230px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+#content .member-img:hover  {
+  box-shadow: 5px 5px 5px rgb(59, 59, 59);
+  width: 250px;
+  transition: 0.5s;
+}
+
+#content .what-section  {
+  background-color: #272727;
+}
+
+#content .what-section .section-heading {
+  font-weight: 500;
+}
+
+.what-list  {
+  margin-top: 32px;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.what-item  {
+  float: left;
+  width: 33.33333%;
+  padding: 0 8px;
+  margin: 8px 0px;
+}
+
+.what-img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.what-img:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.what-body  {
+  background-color: #fff;
+  font-size: 15px;
+  padding: 16px;
+}
+
+.what-heading {
+  font-size: 15px;
+}
+
+.what-time  {
+  margin-top: 15px;
+  color: #757575;
+}
+
+.what-desc  {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.what-btn {
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  padding: 11px 16px;
+  display: inline-block;
+  margin-top: 15px
+}
+
+.what-btn:hover {
+  color: #000;
+  background-color: #979797;
+}
+
+.clear  {
+  clear: both;
+}
+
+.modal  {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-close  {
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  font-size: 15px;
+  padding: 10px 10px;
+  border-radius: 0 20px 0 10px;
+}
+
+.modal-close:hover  {
+  background-color: #ff1d1ddc;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.modal-container  {
+  border-radius: 20px;
+  width: 400px;
+  min-height: 520px;
+  background-color: #009688;
+  position: relative;
+  animation: modalFadeIn ease 0.3s;
+}
+
+.modal-img  {
+  width: 90%;
+  margin-top: 15%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
+  display: flex;
+}
+
+.modal-container .modal-content {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 5px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  
+}
+
+.modal-container #like-btn {
+  margin-top: 35px;
+  margin-left: 10%;
+  width: 40%;
+  min-height: 50px;
+  border-radius: 20px;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  color: rgba(247, 34, 34, 0.808);
+}
+
+.modal-container #like-btn:hover  {
+  background-color: rgba(247, 34, 34, 0.808);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.modal-container #check-btn {
+  width: 40%;
+  min-height: 50px;
+  border-radius: 20px;
+  border-color: #000;
+  border-style: solid;
+  border-width: 2px;
+  color: rgba(0, 128, 0, 0.808);
+}
+
+.modal-container #check-btn:hover {
+  background-color: rgba(0, 128, 0, 0.808);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.modal-container .modal-icon  {
+  font-size: 30px;
+}
+
+.contact-icon  {
+  line-height: 80px;
+  font-size: 40px;
+  color: black;
+  margin: 0px 10px;
+}
+
+.contact-section .section-footer  {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fa-facebook:hover  {
+  color: rgb(0, 104, 202);
+  font-size: 60px;
+  transition: ease 0.5s;
+  
+}
+
+.fa-instagram:hover {
+  color: #f02603dc;
+  font-size: 60px;
+  transition: ease 0.5s;
+}
+
+.fa-github:hover  {
+  color: #0a2f75;
+  font-size: 60px;
+  transition: ease 0.5s;
+}
+
+.fa-spotify:hover {
+  color: #01b83e;
+  font-size: 60px;
+  transition: ease 0.5s;
+}
+
+.sub-modal  {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.sub-modal .modal-img {
+  max-width: 600px;
+}
+
+.sub-modal.open {
+  display: flex;
+}
+
+.sub-modal1  {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  display: none;
+}
+
+.sub-modal1 .modal-clip {
+  max-width: 600px;
+  margin-top: 100px;
+  margin-left: 450px;
+}
+
+.sub-modal1.open {
+  display: flex;
+}
